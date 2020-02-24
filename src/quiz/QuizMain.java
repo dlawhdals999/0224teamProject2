@@ -234,7 +234,39 @@ public class QuizMain extends JFrame implements ActionListener {
 			}
 		}
 		realQuiz = quiz1 + "";
+		
+		if(realQuiz.length() > 20) {
+			quizLabel.setFont(new Font("굴림",Font.BOLD,18));
+		}else {
+			quizLabel.setFont(new Font("굴림",Font.BOLD,22));
+		}
+		
 		quizLabel.setText("<html>"+realQuiz+"</html>");
+		
+		if(list2.get(arr[0]).length() > 15) {
+			firstLabel.setFont(new Font("굴림",Font.BOLD,15));
+		}else {
+			firstLabel.setFont(new Font("굴림",Font.BOLD,18));
+		}
+		
+		if(list2.get(arr[1]).length() > 15) {
+			secondlabel.setFont(new Font("굴림",Font.BOLD,15));
+		}else {
+			secondlabel.setFont(new Font("굴림",Font.BOLD,18));
+		}
+		
+		if(list2.get(arr[2]).length() > 15) {
+			thirdlabel.setFont(new Font("굴림",Font.BOLD,15));
+		}else {
+			thirdlabel.setFont(new Font("굴림",Font.BOLD,18));
+		}
+		
+		if(list2.get(arr[3]).length() > 15
+				) {
+			fourlabel.setFont(new Font("굴림",Font.BOLD,15));
+		}else {
+			fourlabel.setFont(new Font("굴림",Font.BOLD,18));
+		}
 		
 		firstLabel.setText("<html>"+list2.get(arr[0])+"</html>");
 		secondlabel.setText("<html>"+list2.get(arr[1])+"</html>");
