@@ -22,7 +22,7 @@ public class MainPanel extends JPanel {
 	}
 	
 	public static Dimension getDim() {
-		return new Dimension(img.getWidth(null) + 10, img.getHeight(null) + 38);
+		return new Dimension(img.getWidth(null) + 5, img.getHeight(null) + 28);
 	}
 	
 }
