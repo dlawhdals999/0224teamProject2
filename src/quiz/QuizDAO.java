@@ -63,7 +63,7 @@ public class QuizDAO {
 		ArrayList<QuizVO> quizvo = null;
 		try {
 			Connection conn = DBUtil.getMySQLConnection();
-			String sql = "select * from quiz"; 
+			String sql = "SELECT * FROM quiz ORDER BY idx DESC"; 
 			PreparedStatement pstmt = conn.prepareStatement(sql);
 			ResultSet rs = pstmt.executeQuery();
 			quizvo = new ArrayList<QuizVO>();
