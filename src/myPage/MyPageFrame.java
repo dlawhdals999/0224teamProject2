@@ -114,7 +114,7 @@ public class MyPageFrame extends JFrame implements ActionListener{
 			rs.next();
 			answerLabel.setText("" + rs.getInt("answerCount"));
 			wrongAnswerLabel.setText("" + rs.getInt("wrongCount"));
-			Double rate = rs.getDouble("answerCount") / rs.getDouble("wrongCount");
+			Double rate = rs.getDouble("answerCount") / (rs.getDouble("answerCount") + rs.getDouble("wrongCount"));
 			DecimalFormat form = new DecimalFormat("#%");
 			answerRateLabel.setText("" + form.format(rate));
 			
